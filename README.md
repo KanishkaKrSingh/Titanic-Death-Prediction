@@ -42,10 +42,52 @@ Build a predictive model to determine which passengers survived the Titanic ship
 
 ---
 
+## Basic Concepts
+
+1. Logistic Regression
+-Type: Linear Classification Model
+
+-Purpose: Estimates the probability of survival using a logistic (sigmoid) function.
+
+-Test Accuracy: 81.0%
+
+-Strengths: Simple, interpretable, fast to train.
+
+2. Decision Tree Classifier
+-Type: Tree-based Model
+
+-Purpose: Splits data based on feature thresholds to make survival predictions.
+
+-Test Accuracy: 78.2%
+
+-Strengths: Handles non-linear data well, easy to visualize.
+
+3. Random Forest Classifier
+-Type: Ensemble of Decision Trees
+
+-Purpose: Averages multiple decision trees to reduce overfitting and improve performance.
+
+-Test Accuracy: 82.1%
+
+-Strengths: Better generalization, handles both numerical and categorical data.
+
+4. Random Forest (GridSearch Optimized)
+-Type: Hyperparameter-Tuned Random Forest
+
+-Purpose: Uses GridSearchCV to find the best combination of hyperparameters.
+
+-Cross-Validation Accuracy: 83.5%
+
+-Best Params: n_estimators=100, max_depth=5, min_samples_split=2
+
+-Strengths: Improved performance and generalization by fine-tuning.
+
+---
+
 ## 📊 Visualizations
-![](D:\Python\MiniProjects\Project1\myplot.png)
-![](D:\Python\MiniProjects\Project1\myplot1.png)
-![](D:\Python\MiniProjects\Project1\myplot2.png)
+![Graph I](myplot.png)
+![Graph II](myplot1.png)
+![Graph III](myplot2.png)
 
 Output -> 
 ```bash
@@ -92,12 +134,19 @@ GridSearchCV Best CV Score: 0.8356446370530877
 ## 🧾 Files and Structure
 
 ├── train.csv
-├── test.csv
+
+├── test.csv]
+
 ├── gender_submission.csv
+
 ├── submission.csv # Final prediction submission file
+
 ├── script.py # Core Python script for training and prediction
+
 ├── Model Accuracy Rate.py
+
 ├── plots
+
 └── README.md
 
 
